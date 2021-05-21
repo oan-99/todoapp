@@ -4,11 +4,11 @@ require_once("../todoapp_scripts/script_dbConnection.php");
 
     function ShowPriority($priority, $taskId){
         if($priority == 1)
-            echo "<span class=\"priority " . $taskId . "\">Low</span>";
-        else if($priority == 2)
             echo "<span class=\"priority " . $taskId . "\">Medium</span>";
-        else
+        else if($priority == 2)
             echo "<span class=\"priority " . $taskId . "\">High</span>";
+        else
+            echo "<span class=\"priority " . $taskId . "\">Low</span>";
     }
 
     function ShowLabels($labels, $taskId){
